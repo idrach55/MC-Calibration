@@ -1,8 +1,10 @@
 # MC-Calibration
-Calibrate stochastic process parameters to options using MonteCarlo pricing
+This is a coding project I did for an interview in December 2019. I had already written python code implementing a MonteCarlo pricer for vanilla options. I also created some "example" stochastic processes to test it: GBMJD (Brownian motion + jumps) and OUJD (mean-reverting + jumps.) The ask for the project was to calibrate my invented models and Heston's StochVol to a strip of 1m NDX options. 
+
+The project was interesting and challenging from a strategy standpoint: what error function(s) should one minimize to properly "calibrate"? how should one clean these data? There were also technical challenges due to using MonteCarlo -- (1) speed, which required re-writing of some code in Cython and (2) random noise, which easily disrupts a gradient descent optimizer. The full project write-up I submitted along with my code and results is below.
 
 # Calibrating Heston & Others
-## Isaac Drachman
+Isaac Drachman
 
 ## Calibration
 
