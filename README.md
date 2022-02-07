@@ -3,9 +3,6 @@ This is a coding project I did for an interview in December 2019. I had already 
 
 The project was interesting and challenging from a strategy standpoint: what error function(s) should one minimize to properly "calibrate" and how should one clean/transform the data? There were also technical challenges due to using MonteCarlo -- (1) speed, which required re-writing of some code in Cython and (2) random noise, which easily disrupted the gradient descent optimizer and required some creative solutions. The full project write-up I submitted along with my code and results is below.
 
-# Calibrating Heston & Others
-Isaac Drachman
-
 ## Calibration
 
 I cleaned the data by removing ITM and no-bid options. I considered various loss functions: absolute %
